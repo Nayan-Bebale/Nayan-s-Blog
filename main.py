@@ -12,6 +12,7 @@ from functools import wraps
 from flask import abort
 from sqlalchemy import select, ForeignKey, Integer
 from flask_gravatar import Gravatar
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
