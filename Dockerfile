@@ -1,3 +1,4 @@
+
 # Use an official Python runtime as the base image
 FROM python:3.8-slim
 
@@ -19,5 +20,8 @@ EXPOSE 5000
 # Define environment variable
 ENV NAME World
 
+# Set the entrypoint as the Python script
+ENTRYPOINT ["python"]
+
 # Run app.py when the container launches
-CMD ["python", "main.py"]
+CMD ["main.py"]
